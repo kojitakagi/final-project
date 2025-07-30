@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Final Project: Diabetes Prediction",
-    "section": "",
-    "text": "Welcome! This is the project website for my final project on Diabetes Prediction\nusing the 2015 BRFSS dataset and a logistic regression model.\n\n\n\nEDA for Diabetes Prediction\nModeling and Results\n\n\n\n\nThe REST API is built with the plumber package in R.\nYou can try it locally using:\nlibrary(plumber)\napi &lt;- pr(\"plumber.R\")\napi$run(port = 8000)\nThen go to: http://127.0.0.1:8000/docs/\nAuthor Koji Takagi GitHub Pages: https://kojitakagi.github.io/final-project"
-  },
-  {
-    "objectID": "index.html#project-components",
-    "href": "index.html#project-components",
-    "title": "Final Project: Diabetes Prediction",
-    "section": "",
-    "text": "EDA for Diabetes Prediction\nModeling and Results"
-  },
-  {
-    "objectID": "index.html#api-access",
-    "href": "index.html#api-access",
-    "title": "Final Project: Diabetes Prediction",
-    "section": "",
-    "text": "The REST API is built with the plumber package in R.\nYou can try it locally using:\nlibrary(plumber)\napi &lt;- pr(\"plumber.R\")\napi$run(port = 8000)\nThen go to: http://127.0.0.1:8000/docs/\nAuthor Koji Takagi GitHub Pages: https://kojitakagi.github.io/final-project"
-  },
-  {
     "objectID": "EDA.html",
     "href": "EDA.html",
     "title": "EDA for Diabetes Prediction",
@@ -54,6 +33,27 @@
     "title": "EDA for Diabetes Prediction",
     "section": "4. Bivariate Exploration",
     "text": "4. Bivariate Exploration\n\nHigh Blood Pressure\n\ndf %&gt;%\n  count(high_bp, diabetes_binary) %&gt;%\n  ggplot(aes(high_bp, n, fill = diabetes_binary)) +\n  geom_bar(stat = \"identity\", position = \"fill\") +\n  labs(y = \"Proportion\", title = \"Diabetes by High Blood Pressure\") +\n  theme_minimal()\n\n\n\n\nWe observe that individuals with high blood pressure are more likely to have diabetes.\n\n\nSmoking\n\ndf %&gt;%\n  count(smoker, diabetes_binary) %&gt;%\n  ggplot(aes(smoker, n, fill = diabetes_binary)) +\n  geom_bar(stat = \"identity\", position = \"fill\") +\n  labs(y = \"Proportion\", title = \"Diabetes by Smoking Status\") +\n  theme_minimal()\n\n\n\n\nWhile the relationship is weaker, smokers appear slightly more likely to have diabetes than non-smokers.\n\n\nPhysical Activity\n\ndf %&gt;%\n  count(phys_activity, diabetes_binary) %&gt;%\n  ggplot(aes(phys_activity, n, fill = diabetes_binary)) +\n  geom_bar(stat = \"identity\", position = \"fill\") +\n  labs(y = \"Proportion\", title = \"Diabetes by Physical Activity\") +\n  theme_minimal()\n\n\n\n\nEngaging in physical activity appears to reduce the likelihood of diabetes.\n\nClick here for the Modeling Page"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Final Project: Diabetes Prediction",
+    "section": "",
+    "text": "Welcome! This is the project website for my final project on Diabetes Prediction\nusing the 2015 BRFSS dataset and a logistic regression model.\n\n\n\nEDA for Diabetes Prediction\nModeling and Results\n\n\n\n\nThe REST API is built with the plumber package in R.\nYou can try it locally using:\nlibrary(plumber)\napi &lt;- pr(\"plumber.R\")\napi$run(port = 8000)\nThen go to: http://127.0.0.1:8000/docs/\nAuthor Koji Takagi GitHub Pages: https://kojitakagi.github.io/final-project"
+  },
+  {
+    "objectID": "index.html#project-components",
+    "href": "index.html#project-components",
+    "title": "Final Project: Diabetes Prediction",
+    "section": "",
+    "text": "EDA for Diabetes Prediction\nModeling and Results"
+  },
+  {
+    "objectID": "index.html#api-access",
+    "href": "index.html#api-access",
+    "title": "Final Project: Diabetes Prediction",
+    "section": "",
+    "text": "The REST API is built with the plumber package in R.\nYou can try it locally using:\nlibrary(plumber)\napi &lt;- pr(\"plumber.R\")\napi$run(port = 8000)\nThen go to: http://127.0.0.1:8000/docs/\nAuthor Koji Takagi GitHub Pages: https://kojitakagi.github.io/final-project"
   },
   {
     "objectID": "Modeling.html",
